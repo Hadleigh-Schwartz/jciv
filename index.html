@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta charset="UTF-8">
+	  
+	  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+
+  
+      <link rel="stylesheet" href="css/style.css">
+
+
+	<style>
+	
+		
+		h1 {
+			padding-top:130px;
+			text-align:center;
+			font-size: 50px;
+		}
+
+		.subtitle{
+			padding-top:570px;
+			text-align:center;
+			text-transform: none;
+			font-size:45px;
+			margin: 0 20px;
+			opacity: 0.0;
+			animation: fadeIn ease 10s;
+			-webkit-animation: fadeIn ease 5s;
+			animation-delay:3s; 
+			color:black;
+			animation-fill-mode: forwards;
+
+		}
+
+	
+
+		@keyframes fadeIn {
+		0% {opacity:0;}
+		100% {opacity:1;}
+		}
+
+		@-moz-keyframes fadeIn {
+		0% {opacity:0;}
+		100% {opacity:1;}
+		}
+
+		@-webkit-keyframes fadeIn {
+		0% {opacity:0;}
+		100% {opacity:1;}
+		}
+
+		@-o-keyframes fadeIn {
+		0% {opacity:0;}
+		100% {opacity:1;}
+		}
+
+		@-ms-keyframes fadeIn {
+		0% {opacity:0;}
+		100% {opacity:1;}
+		}
+
+
+		#container
+		{
+		    height:1000px; 
+		    font-style:'Book Antiqua';
+		    animation-delay:4s;
+			font-size: 40px;
+			color: grey;
+			text-transform: none;
+			margin: 0 20px;
+			opacity: 0.0;
+			animation: fadeIn ease 10s;
+			-webkit-animation: fadeIn ease 10s;
+			animation-fill-mode: forwards;
+			padding-bottom:300px;   
+		}
+
+
+
+		.hideme
+		{
+			padding-left:250px;
+			padding-right:250px;
+		    opacity:0;
+		    font-size:25px;
+		    line-height: 40px
+		}
+
+		
+	</style>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+	<script>
+
+		
+		$(function(){  // $(document).ready shorthand
+		  $('.monster').fadeIn('slow');
+		});
+
+		$(document).ready(function() {
+		    
+		    /* Every time the window is scrolled ... */
+		    $(window).scroll( function(){
+		    
+		        /* Check the location of each desired element */
+		        $('.hideme').each( function(i){
+		            
+		            var bottom_of_object = $(this).position().top + $(this).outerHeight();
+		            var bottom_of_window = $(window).scrollTop() + $(window).height();
+		            
+		            /* If the object is completely visible in the window, fade it it */
+		            if( bottom_of_window > bottom_of_object ){
+		                
+		                $(this).animate({'opacity':'1'},3000);
+		                    
+		            }
+		            
+		        }); 
+		    
+		    });
+		    
+		});
+
+
+	</script>
+
+
+<title>Across Space and Time</title>
+</head>
+
+<body style="font-family:'Book Antiqua'"> <!--;background-color:rgba(214, 212, 209, 0.39)-->
+
+<h1>Across Space and Time</h1>
+
+<div id="container">
+	<div id="monster" style="text-align:center">	
+		<p>אריבער פלאץ און צייט</p>
+		<p>על פני מרחב וזמן</p>
+		<p>праз прастору і час</p>
+		<p>через пространство и время</p>	
+	</div>
+
+
+
+	<div class='hideme'> 
+		<p>
+			I wrote my University of Chicago admissions essay about the worldline of an opportunity that originated when my Great Grandpa Benjamin immigrated to America and purchased his first piece of real estate in Queens. A worldline is a path in spacetime, tracing the history of an object’s location in space at each instant in time. The worldline of the opportunity associated wth 4541 39th Place, Queens, NY, combines elements of space and time into one overarching 4D tale of my maternal family’s history and achievement of opportunity. 
+		</p>
+
+		<p>
+			As I brainstormed ideas for my Un-essay, I found myself gravitating towards this story and, particularly, the way it combined elements of space and time. Something about it was distinctly Jewish. Perhaps it was merely the fact that it centered around my Great-Grandpa, whose life was so defined by his Jewish identity. He fled Russia due to pogroms; achieved the quintessential American dream in the 1930s alongside a wave of Jewish immigrants; was an avid Zionist, funding hospitals, kibbutzim, and synagogues in early Israel; and passed away after being hit by a Manischevitz truck while on a run one morning in Brooklyn (remove this?).
+	    </p>
+	</div>
+
+	<div class='hideme'>
+
+	    <p>
+			More accurately, this story is "Jewish" because it captures the intense, incredibly meaningful coalescence of space and time in the Jewish experience - something I have felt almost every day in this class. So many of the primary and second sources we explored throughout the quarter felt relatable, despite their originating from disparate cultures, time periods, and authors. I found myself nodding vigorously to Marge Piercy's "Maggid,"" seeing characteristics of the early <i> chalutzim </i> described by Ben Gurion in my grandparents who abandoned city life for the farm, and running along the lake shore to A-WA’s empowering songs. These poems, songs, books, and movies evoke family stories and events that occured centuries before or centuries after their creations, in places thousands of miles away. These connections blur space and time. And as we progress through Jewish history/this class, I progress through my own family’s history across space and time. 
+		</p>
+
+		<p>
+			This process of hopping back and forth between continents and centuries, like my Grandpa Benjamin’s story and the Jewish history that we have spent the quarter exploring, is full of both joy and pain. It is diverse and rich, full of dark and light humor, and contains uncanny parallels between past, present, and future. In this interactive timeline, I hope to capture this profound spirit. In each entry, I integrate a topic or a piece read in class with an instance in space and time of my family’s history.
+	    </p>
+
+
+	</div>
+
+
+	<hr>
+
+</div>
+
+<h2 class="subtitle">Jewish Civilization II Through The Lens of Family History</h2>	
+
+
+
+<div class="timeline-container" id="timeline-1">
+  <div class="timeline">
+    <div class="timeline-item" data-text="
+	    The voice of the past 
+		is an incomplete verb 
+
+		The song of the past
+		Is in search of a subject
+
+		The sound of the past
+		is a sister’s lament 
+
+		How do these sisters cross-stitch our story?...
+
+		How can we recount what is past?
+
+		Let makaan cool to ashes
+		and let a morning lift us into the telling
+
+		What is a past without a people 
+		to look back on it? " data-source="-Jacqueline Osherow, Lesson: Past, Incomplete" >
+      <div class="timeline__content"><img class="timeline__img" src="1850sharveysgreatgrandparents.jpg"/>
+        <h2 class="timeline__content-title">c. 1870 Antipol, Belarus</h2>
+        <p class="timeline__content-desc">Hudes and Zundel, my grandpa's great great grandparents. They lived in Antipol, the shtetl in Belarus where both my maternal grandpa's and grandma's family originated. In my family, the word "Antipol" is used like an abstract noun. It is Jewishness, tradition and heritage, pride in toughness and survival, family lore, pain and happiness, and history. It is a way of viewing and understanding the past, and it is a word that my family and I will carry into the future. This is one of the only pictures I have of family in Antipol - it too represents these things. </p>
+      </div>
+    </div>
+    <div class="timeline-item" data-text="Incidentally, the above-mentioned ritual shall not be confined to services int he temple; rather it shall apply to all those religious customs and acts of daily life which are sanctified by the church or by their own nature." data-source="The New Israelite Temple Association, Constitution of the Hamburg Temple (December 11, 1817)">
+      <div class="timeline__content"><img class="timeline__img" src="1880sbsmomsfam.jpg"/>
+      	<img class="timeline__img" src="1850sbsgreatgrandparents.png"/>
+        <h2 class="timeline__content-title">c. 1880 Hamburg, Germany</h2>
+        <p class="timeline__content-desc"> 
+        	Top: My Bubby's great great grandfather, great grandfather, and grandmother at a Jewish community picnic in Hamburg. The group depicted was part of the relatively new Reform Jewish movement, and you can see that Jewish cultural and communal life here is strong. 
+        	<br>
+        	<br>
+        	Bottom: My Bubby's maternal great great grandfather, Siegfried Freidman, and his wife, also in Hamburg.
+        </p>
+      </div>
+    </div>
+    <div class="timeline-item" data-text='"So they walked out of Egypt. So they bribed their way
+		out of Russia under loads of straw;so they steamed
+		out of the bloody smoking charnelhouse of Europe
+		on overloaded freighters forbidden all ports—
+		out of pain into death or freedom or a different
+		painful dignity, into squalor and politics."' data-source='-Marge Piercy, "Maggid"'>
+      <div class="timeline__content"><img class="timeline__img" src="1880zsmomsfam.JPG"/>
+        <h2 class="timeline__content-title">c. 1880 Minsk, Russia</h2>
+        <p class="timeline__content-desc">My Zaide's grandma, with her children Delia, Eva and Minna, in eastern Russia. They later immigrated to the U.S. for a better life and to escape the constant looming threat of pogroms. Once in America, they used the surname Gerstein. While in Russia, however, they had regularly changed their last name to confound the Russian census takers who would conscript the men into the army - from which they would never be released. 
+        <br>
+        The imagery of these women immigrating to the U.S. with three young children in tow is evocative of Piercy's writings on the courage required for Jews to leave their homes for a better life. 
+        </p>
+      </div>
+    </div>
+    <div class="timeline-item" data-text='"A Jew must never, never give up hope. How does he go on hoping, you ask, when he’s already died a thousand deaths? But that’s the whole point of being a Jew in this world! What does it say in the prayer book? Atoh bekhartonu! We’re God’s chosen people; it’s no wonder the whole world envies us."' data-source="-Sholem Aleichem, Tevye the Dairyman and The Railroad Stories">
+      <div class="timeline__content"><img class="timeline__img" src="1939gittelsfam.jpg"/>
+        <h2 class="timeline__content-title">1939 <br> Brooklyn, NY</h2>
+        <p class="timeline__content-desc"> My maternal ancestors. In the top left corner is my great grandpa Benjamin Marcus, standing next to Michoil Koshet, one of the founders of Kibbutz Yifat in Israel. In the bottom left is great grandma Gittel, sitting next to her mother, father, and sister. The baby is my great aunt Sheila. My great grandma Gertrude (Gittel) Koshtshuk, and my great grandpa Benjamin Marcus. Gittel and her family were from Antipol. Great grandpa Ben was born in Minsk. As a young child, "Benko" supported his family by collecting and reselling trash. He made extra money by peeing into empty bottles and selling this "fine wine" to the passing soldiers, who were often virulently anti-Semitic.<!--  He arrived in Ellis Island in 1912 after fleeing pogroms, and began working as a house/building painter. By 1935 he had was a successful real estate owner.  -->
+        <br>
+        The cleverness of my Great Grandpa Ben reminded me of <i> Tevye the Dairyman </i>. I picture both stories taking place in similar settings: the forests/winding paths of Eastern Europe/Western Russia, the quipping in Yiddish, and the hidden acts of defieance and quickness to humor in the face of anti-Semitism. 
+        <br>
+        <br>
+        P.S. Great Grandpa Benjamin's brother, Barney, is the Great Granfather of Max Marcus (also in this class). Max and I are third cousins, and we met for the first time at shabbat dinner at UChicago Hillel. 
+        </p>
+      </div>
+    </div>
+  <!--   <div class="timeline-item" data-text="">
+      <div class="timeline__content"><img class="timeline__img" src="1939gittelsfam.jpg"/>
+        <h2 class="timeline__content-title">1939 <br> Brooklyn, NY</h2>
+        <p class="timeline__content-desc"> My maternal ancestors In the top left corner is my great grandpa Ben, standing next to Michoil Koshet, one of the founders of Kibbutz Yifat in Israel. In the bottom left is great grandma Gittel, next to her mother, father, and sister. The baby is my great aunt Sheila. </p>
+      </div>
+    </div> -->
+    <div class="timeline-item" data-text='"O God of Mercy
+		Choose - 
+		another people.
+		We are tired of death, tired of corpses,
+		We have no more prayers.
+		Choose -
+		another people.
+		We have run out of blood
+		For victims,
+		Our houses have been turned into desert,
+		The earth lacks space for tombstones,
+		There are no more lamentations
+		Nor songs of woe
+		In the ancient texts."'
+		data-source='-Kadya Molodovsky, "God of Mercy"'>
+      <div class="timeline__content"><img class="timeline__img" src="firstmartyrprayer.jpg"/>
+      	<img class="timeline__img" src="womenmourning.jpg"/>
+        <h2 class="timeline__content-title">c. 1940 Antipol, Belarus</h2>
+        <p class="timeline__content-desc"> Residents of Antipol mourn the first martyrs of the Holocaust. The majority of my maternal ancestors chose to stay in Antipol despite the increasing anti-Semitism. They owned a well-established pickle-making business and hoped to ride out the violence. My great great grandparents were the few members of the family who emigrated in time. </p>
+      </div>
+    </div>
+    <div class="timeline-item" data-text='"Aren’t I obliged to count the dead? 
+		or, at the very least, the gross indignities?
+		Wasn’t I myself  forced to hide 
+
+		My Sabbath candles, pull my mezuzahs
+		Off my doorposts, hang ham above my door 
+		At Passover, race through the exodus
+
+		At a sotto voce seder in my cellar?"' data-source='-Jacqueline Osherow, "Last Ticket of the Day: Return Visit"'>
+      <div class="timeline__content"><img class="timeline__img" src="massgrave.jpg"/>
+        <h2 class="timeline__content-title">1942 Antipol, Belarus</h2>
+        <p class="timeline__content-desc">The site of the mass murder of the remaining Jews in Antipol. Almost all of my great great grandmother Rifka's family (Rifka is my Grandfather's Mom) were killed here. Photos like these - and the stories and images of the Holocaust that we studied in class feel deeply personal and haunting. Even if we can't discern our actual ancestors in these grainy, black and white photos - so casually distributed and viewed - we see our family members and we feel their pain.
+        </p>
+      </div>
+    </div>
+    <div class="timeline-item" data-text='"Not like the brazen giant of Greek fame, 
+			With conquering limbs astride from land to land;
+			Here at our sea-washed, sunset gates shall stand
+			A mighty woman with a torch, whose flame
+			Is the imprisoned lightning, and her name
+			Mother of Exiles. From her beacon-hand
+			Glows world-wide welcome; her mild eyes command 
+			The air-bridged harbor that twin cities frame.
+			"' data-source='-Emma Lazarus, "The New Colossus"'>
+      <div class="timeline__content"><img class="timeline__img" src="1950dadsfam.JPG"/>
+        <h2 class="timeline__content-title">c. 1950 <br> Lincoln, NE</h2>
+        <p class="timeline__content-desc">
+         My Zaide's father and family. They were sent to Lincoln, NE to work in railroad construction as soon as they got off the boat in America in the early 1900's. My Zaide's Zaide worked as a tool maker. My Zaide's father, Grandpa Abe Schwartz, was a boxer. In the front and center is "Bobo," who ran a dry goods store in Rock Island, Illinois and eventually moved to Omaha, Nebraska. <!-- Her husband had left her because she was too religious. --> In foreign lands with tiny Jewish populations - far from their native Russia - they quickly adapted and achieved the quintessential Americana dream, while still managing to preserve their Judaism. 
+        </p>
+      </div>
+    </div>
+
+    <div class="timeline-item">
+      <!-- <img style="position:absolute;left:-400px;top:350px" src="rabbiscat.jpg"/> -->
+      <img style="position:absolute;left:-500px;top:450px;width: 100%;height: auto;" src="cat.jpg"/>
+      <div class="timeline__content"><img class="timeline__img" src="1956gittelsparents.jpg"/>
+        <h2 class="timeline__content-title">1956 <br> Brooklyn, NY</h2>
+        <p class="timeline__content-desc">My great great great grandma Channah and great great great grandpa Mishaleizer, both born in Antipol. They visited Israel in 1950, and when they returned Bubby Channah (who spoke Yiddish and a bit of English) said that she couldn't understand anything the people were saying in Israel, and that she felt stupid, since even the cows there understood Hebrew (she saw them responding to the herders' shouts of "boi, boi!"). The imagery of Hebrew-speaking cows - and the humor, frustration, and confusion that ensue with language barriers - necessarily brings to mind <i> The Rabbi's Cat </i>.
+        </p>
+      </div>
+    </div>
+
+      <div class="timeline-item" data-text='"The confluence of Russian pogroms and antiblack riots would become on of the age’s most formative lessons in American Jewish radical circles. An eventual by-product would be the formation in 1909 of the National Association of the Advancement of Colored People (NAACP), which was launched in the New York City apartment of Yiddish-speaking Anna Strunsky and her husband, William Walling, who became the NAACp’s first chairman."' data-source="-Steven Zipperstein, Pogrom: Kishinev and the Tilt of History">
+      <div class="timeline__content">
+      	<img class="timeline__img" src="just married 2.jpg"/>
+      	<img class="timeline__img" src="right after married.jpg"/>
+        <h2 style='font-size:55px' class="timeline__content-title">1964 <br> Wilmington, <br> NC</h2>
+        <p class="timeline__content-desc">
+        	My Bubby and Zaide (we call him Zayze, since my oldest cousin couldn't pronounce Zaide when he was younger), are married at my Bubby's synagogue. My Bubby was working on the picket line with the NAACP the summer she met my Zayze. The Jewish community in Wilmington put enormous pressure on her and her family for her to disassociate herself from the
+		movement. The community was afraid that there would be reprisals against the Jewish community from the KKK, which was rampant in the area. But as a descendant of victims of pogroms, she continued to strive for a world free of discriminatory violence. 
+        </p>
+      </div>
+    </div>
+    
+
+  
+
+     <div style="padding-top:250px" class="timeline-item">
+     	<iframe style="position:absolute;right:500px;top:500px"width="560" height="315" src="https://www.youtube.com/embed/iD90UbVXZSE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <div class="timeline__content"><img class="timeline__img" src="grandmaandgrandpa.jpeg"/>
+        <h2 class="timeline__content-title">1965 <br> Toronto, Ontario, Canada</h2>
+        <p class="timeline__content-desc">My Grandma and my Grandpa Harvey, who I am named after. My Grandpa was visiting NYC for job/med school interviews. He was staying with his cousins, and when he arrived to their house and knocked on the door, my grandma opened it. She was completing her PhD in microbiology. The rest was history.
+        <br>
+        My grandma grew up in Brooklyn, and my grandpa in Windsor, Ontario, Canada. His family fled the anti-Semitic violence in Antipol to which they lost many relatives - but encountered virulent anti-Semitism even in Canada. His father, a peddler who sold on time, would often be thrown out of houses and denied payment when he came to collect, simply for being Jewish. When he was seeking work, Grandpa Harvey was denied at multiple Toronto hospitals due to pervasive "Jewish quotas." His defiance - implicit in his success and constant work ethic - and the theme of encountering discrimination even in a new, supposedly more welcoming home, is echoed in A-WA's "Hana Mash Hu Al Yaman."
+        </p>
+      </div>
+    </div>
+    <div class="timeline-item" data-text='"Rebellion against exile meant a revolt against one&#39;s parents, against the bourgeois way of life in the shtetl, the aspiration to a life of labour close to nature."' data-source="-Anita Shapira,  Ben-Gurion and the Bible: The Forging of an Historical Narrative?">
+      <div class="timeline__content">
+      	<img class="timeline__img" src="farmfamily.jpg"/>
+      	<img class="timeline__img" src="farm.jpg"/>
+        <h2 class="timeline__content-title">c. 1980<br> Stanstead, Quebec, Canada</h2>
+        <p class="timeline__content-desc"> 
+        	My Bubby, Zayze, dad and brothers on their farm in Quebec. 
+        	<br>
+        	Bottom: My Bubby, Zayze, Great Grandpa Abe, and Uncle John outside the barn. 
+        	<br>
+        	<br>
+			From the time my Bubby was a college student at Duke she had wanted to live on a kibbutz. She and my Zazye had plans to move to Kibbutz Hagoshrim, but the Lebanese war broke out and they couldn't get permission to live so close to the border.
+			<br>
+			So, in 1977, my Zayze quit his job as a director of operations at a consulting firm and they moved permanently to their in southern Quebec. They built out their farm house completely by themselves, raised chickens and ducks, planted a huge garden full of strawberries, red currants, raspberries, and blackberries, goosberries, planted a 450-tree apple and cherry orchard, and pursued a career as artists in what time they had remaining. They were original hippies, and were <i> chalutzim </i> in their own right.
+        </p>
+      </div>
+    </div>
+    <div class="timeline-item" data-text='"At the beginning of the game I still remembered not to kick with the tip of my shoe, so as not to hurt Grandpa, but after a while I forgot, just as the old man sat Volhynia House said people tend to do, and I even managed to kick aa tie-breaking goal. But when the game was over I remembered and looked at the shoes. All of a sudden they became so comfortable, much bouncier than when they were in the box. 
+‘Some goal, eh?’ I reminded Grandpa on the way home. ‘The goalie didn’t know what hit him.’ Grandpa said nothing, but judging by the tread I could tell that he, too, was pleased."' data-source="-Etgar Keret, Shoes">
+      <div class="timeline__content"><img class="timeline__img" src="channukah 1974.jpeg"/>
+        <h2 class="timeline__content-title">1974 Hollywood, FL</h2>
+        <p class="timeline__content-desc"> Ben and Gittel helping my mom and aunt light the Chanukkah candles at their condo in Florida, where they spent each winter. The time my mom spent visiting her grandparents there influenced her so much that she decided to move to and raise my sisters and I in Florida. 
+        <br>
+        Each morning in Florida, Gittel had a bowl of Life cereal and a glass of fresh orange juice. This is one of my favorite breakfasts to this day - if not because it is delicious, because it brings me closer to Grandma Gigi, who I never had the privilege of meeting but is a beloved family figure and role model. Etgar Keret's <i> Shoes </i> elegantly captured this phenomenon of finding connections to ancestors through mundane objects - like cereal or shoes - and the challenging but important task of holding on to joy and fond family memories when preserving a family history that also contains much pain. 
+        </p>
+      </div>
+    </div>
+   <!--  <div class="timeline-item" style="padding-bottom:500px" data-text="">
+      <div class="timeline__content"><img class="timeline__img" src="farm.JPG"/>
+        <h2 class="timeline__content-title">1980 Stanstead, Quebec, Canada</h2>
+        <p class="timeline__content-desc">   </p>
+      </div>
+    </div> -->
+
+    <div style="padding-bottom:400px" class="timeline-item" data-text='"And may He show me Zion in her splendor, the royal city of my anointed king, and over it, two luminaries, equals: Messiah, son of David and Elijah. May never enemy again divide her, or nomad pitch his tent in her again."' data-source="-Judah Abravanel, Poem to His Son">
+
+        <div class="timeline__content"><img class="timeline__img" src="batmitzvah.png"/>
+      	<img class="timeline__img" src="certificate.jpg"/>
+      	<img class="timeline__img" style="position:absolute;right:330px;top:120px" src="mamabat.png"/>
+        <h2 class="timeline__content-title">1983 Jerusalem, Israel</h2>
+        <p class="timeline__content-desc">After being separated - flung across countries from Israel to Canada -  at the dawn of the 20th century, members of the Marcus and Koshtshuk family reunited in Jerusalem to celebrate my mom's Bat Mitzvah. During the reception, Ben and Gittel were presented with a certificate recognizing their 50th wedding anniversary and 50 years of support of Israel, including their funding of hospitals and the Antipol Synagogue in Tel Aviv. They were the first generation of their families to find respite from violent anti-Semitism and witness the fruitionof a Jewish homeland. 
+        <br>
+        <br>
+		P.S. The reception took place in the same room where Begin and Sadat met to discuss the 1979 Egypt-Israel peace treaty.</p>
+      </div>
+    </div>
+
+    <div class="timeline-item" data-text='"We shall not revert to a lower stage; we shall rise to a higher one. We shall not dwell in mud huts; we shall build new, more beautiful, and more modern houses, and possess them in safety. We shall not lose our acquired possessions; we shall realize them. We shall surrender our well-earned rights for better ones. We shall relinquish none of our cherished customers; we shall find them again."' data-source="Theodor Herzl, The Jewish State (1896)">
+      <div class="timeline__content">
+      	<iframe style="position:absolute; left:-30px;top:-255px" width="560" height="315" src="https://www.youtube.com/embed/7XuoSDTJa9I?start=218" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <h2 class="timeline__content-title">1990 Kibbutz Yifat, Israel</h2>
+        <p class="timeline__content-desc">A memorial video for my great uncle Nimrod, filmed at Kibbutz Yifat. Nimrod was a distinguished pilot in the IDF. He passed away in a crash during a training exercise. Kibbutz Yifat was founded by my ancestors who fled from Antipol prior to the Holocaust. When I watch this video, I am struck by the beauty and serenity of the kibbutz, as well as the sheer number of Jewish family members and friends depicted. I've never been to Israel - never seen such a large, naturally-occurring Jewish community. The video truly represents the achievement of the longings of Zionism - and the somber cause for its creation is a reminder of the sacrifices and pain that are often in tension with happiness and success in the Jewish experience. </p>
+      </div>
+    </div>
+    <div class="timeline-item" data-text="We Jews are all born of wanderers, with shoes
+		under our pillows and a memory of blood that is ours
+		raining down. We honor only those Jews who changed
+		tonight, those who chose the desert over bondage,
+
+		who walked into the strange and became strangers
+		and gave birth to children who could look down
+		on them standing on their shoulders for having
+		been slaves. We honor those who let go of every-
+		thing but freedom, who ran, who revolted, who fought,
+		who became other by saving themselves.
+		" data-source='Marge Piercy, "Maggid"'>
+      <div class="timeline__content"><img class="timeline__img" src="grave2"/>
+      	<img class="timeline__img" src="massgrave2.jpeg"/>
+      	<img class="timeline__img" style="position:absolute;right:330px;top:110px" src="visitingantipol.jpeg"/>
+        <h2 class="timeline__content-title">2010 Antipol, Belarus</h2>
+        <p class="timeline__content-desc">
+          My Grandma and Aunt visited Antipol to return to the origins of our family's history and make peace with the horrific events that have had ripple effects on my family. The mass grave where our family members were buried is now covered in verdant grass. The Jewish cemetery where the first victims of anti-Semitic violence were buried was ransacked during the final liquidation of Antipol's Jews. 
+        </p>
+      </div>
+    </div>
+    <div class="timeline-item" data-text='"The foundational assertion—the stone that the builder refused will always be the head cornerstone—does not inspire a confidence in builders. Our houses have always been tenuous things, more elusive than stones, more enduring than brick, open-sided, permeable to the whims of divine clouds and seasonal rain."' data-source='-Anthony Russel, "Beys"'>
+      <div class="timeline__content"><img class="timeline__img" src="meandcarlos.jpeg"/>
+      	<img style="position:absolute;left:350px;top:100px" class="timeline__img" src="elevator.png"/>
+        <h2 class="timeline__content-title">2018 Queens, NY</h2>
+        <p class="timeline__content-desc">
+        	While in New York in 2018 I decided on a whim to visit the first building Grandpa Benjamin had bought in America. While outside the building with my Dad, a man walked out and we began to chat. His name was Carlos Suarez, and his brother was the building Super. Arnold Marcus (Benjamin Marcus's son) opened the doors to Carlos and his family when they first moved to America from the Dominican Republic in the 1990's. They've had a close relationship with the Marcus family ever since. He spent half of his adult life in 4541 39th Place, where his dad was once the building superintendent, and he recently returned to live. The original elevator - picked by Great Grandpa Benjamin - remains in use. As I ascended to the top floor in it, Mr. Suarez alongside me, past, present, and future seemed to coalesce. Though I'd never before been in the building, I felt at home. 
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="demo-footer"><a href="" target="_blank">Some code for formatting the timeline borrowed from  </a></div>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
+
+    <script src="js/index.js"></script>
+
+
+
+
+
+
+
+</body>
+
+
+
+
+</html>
